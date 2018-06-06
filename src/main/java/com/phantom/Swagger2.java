@@ -36,7 +36,7 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Spring Boot中使用Swagger2构建RESTful APIs")
+                .title("使用Swagger2构建RESTful APIs")
                 .description("更多Spring Boot 关注开源平台，感谢开源 https://github.com/BugBugshere/")
                 .termsOfServiceUrl("https://github.com/BugBugshere/")
                 .contact(new Contact("bugbugshere","https://github.com/BugBugshere/","llhforwork@163.com"))
