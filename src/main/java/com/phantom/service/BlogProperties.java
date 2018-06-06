@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package com.didispace.service;
+package com.phantom.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
@@ -25,21 +25,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class BlogProperties {
 
-    @Value("${com.didispace.blog.name}")
+    @Value("${com.phantom.blog.name}")
     private String name;
-    @Value("${com.didispace.blog.title}")
+    @Value("${com.phantom.blog.title}")
     private String title;
-    @Value("${com.didispace.blog.desc}")
+    @Value("${com.phantom.blog.desc}")
     private String desc;
-    @Value("${com.didispace.blog.value}")
+    @Value("${com.phantom.blog.value}")
     private String value;
-    @Value("${com.didispace.blog.number}")
+    @Value("${com.phantom.blog.number}")
     private Integer number;
-    @Value("${com.didispace.blog.bignumber}")
+    @Value("${com.phantom.blog.bignumber}")
     private Long bignumber;
-    @Value("${com.didispace.blog.test1}")
+    @Value("${com.phantom.blog.test1}")
     private Integer test1;
-    @Value("${com.didispace.blog.test2}")
+    @Value("${com.phantom.blog.test2}")
 
     public String getName() {
         return name;

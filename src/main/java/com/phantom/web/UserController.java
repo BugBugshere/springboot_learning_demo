@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package com.didispace.web;
+package com.phantom.web;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -19,7 +19,7 @@ package com.didispace.web;
  * @since 1.0.0
  */
 
-import com.didispace.domain.User;
+import com.phantom.domain.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;

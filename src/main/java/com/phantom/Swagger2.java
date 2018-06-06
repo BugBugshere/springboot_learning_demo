@@ -1,4 +1,4 @@
-package com.didispace;
+package com.phantom;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +11,15 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/**
+ * 〈一句话功能简述〉<br>
+ * 〈swagger 配置类〉
+ *
+ * @author LLH.
+ * @create 2018/6/6
+ * @since 1.0.0
+ */
+
 @Configuration
 @EnableSwagger2
 public class Swagger2 {
@@ -20,7 +29,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.didispace.web"))
+                .apis(RequestHandlerSelectors.basePackage("com.phantom.web"))
                 .paths(PathSelectors.any())
                 .build();
     }

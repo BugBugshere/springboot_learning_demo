@@ -8,9 +8,11 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package com.didispace.exception;
+package com.phantom.exception;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.servlet.View;
 
-import com.didispace.dto.ErrorInfo;
+import com.phantom.dto.ErrorInfo;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,7 +31,9 @@ import javax.servlet.http.HttpServletRequest;
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {
-    public static final String DEFAULT_ERROR_VIEW = "error"; //默认错误视图
+
+    /**默认错误视图*/
+    public static final String DEFAULT_ERROR_VIEW = "error";
 
 
     @ExceptionHandler( Exception.class)

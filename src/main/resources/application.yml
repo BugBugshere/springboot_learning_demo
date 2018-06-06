@@ -1,9 +1,9 @@
 com:
-  didispace:
+  phantom:
     blog:
       name: 程序猿DD
       title: Spring Boot教程
-      desc: ${com.didispace.blog.name}正在努力写《${com.didispace.blog.title}》
+      desc: ${com.phantom.blog.name}正在努力写《${com.phantom.blog.title}》
       #随机字符串
       value: ${random.value}
       # 随机int
@@ -19,3 +19,9 @@ com:
 spring:
   profiles:
     active: dev
+  datasource:
+    url: jdbc:oracle:thin:@10.11.46.10:1521:oadev
+    username: ecology
+    password: ecology
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+

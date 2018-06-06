@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package com.didispace.domain;
+package com.phantom.domain;
 
 import org.springframework.context.annotation.Bean;
 
