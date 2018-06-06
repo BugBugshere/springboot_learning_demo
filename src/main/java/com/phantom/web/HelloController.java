@@ -1,4 +1,4 @@
-package com.didispace.web;
+package com.phantom.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -6,12 +6,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * 〈一句话功能简述〉<br> 
+ * 〈入口类〉
+ *
+ * @author LLH.
+ * @create 2018/6/6
+ * @since 1.0.0
+ */
 @Controller
 public class HelloController {
 
     @RequestMapping("/")
     public String index(ModelMap map){
-        //map.addAttribute("host","http://www.bilibili.com");
+
         map.put("host","http://www.bilibili.com");
         return "index";
     }

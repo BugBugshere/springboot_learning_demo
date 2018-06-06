@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package com.didispace.exception;
+package com.phantom.exception;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -20,7 +20,10 @@ package com.didispace.exception;
  */
 public class MyException extends Exception{
 
-    //显示声明构造器
+    /**
+     * 显示声明构造器
+     * @param message
+     */
     public MyException(String message) {
         super(message);
     }
