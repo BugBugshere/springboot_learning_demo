@@ -24,4 +24,10 @@ spring:
     username: ecology
     password: ecology
     driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: create-drop
+
 
